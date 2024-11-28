@@ -12,6 +12,7 @@ void AMyGameState::AddScore(APlayerController* Player, int32 Score)
 		else {
 			PlayerScores.Add(Player, Score);
 		}
+
 		UE_LOG(LogTemp, Warning, TEXT("Player %s now has %d points"), *Player->GetName(), PlayerScores[Player]);
 	}
 }
